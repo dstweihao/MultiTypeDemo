@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#EEEEEE"
+    android:paddingTop="6dp">
+
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/column_iv_red"
+        android:layout_width="16dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:src="@drawable/shape_red_rectangles" />
+
+    <TextView
+        android:id="@+id/column_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/column_iv_red"
+        android:text="电影频道"
+        android:textColor="#292838"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/column_tv_more"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="点击查看" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/column_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/tv_right" />
+
+    </LinearLayout>
+
+</RelativeLayout>
